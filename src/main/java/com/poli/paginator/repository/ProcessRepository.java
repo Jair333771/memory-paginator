@@ -132,7 +132,6 @@ public class ProcessRepository {
 
             if (next.equals(match)) {
                 match.setState(state);
-                match.setSizePage(siZeProcess);
                 iterate.set(match);
 
                 if(totalUse == count){

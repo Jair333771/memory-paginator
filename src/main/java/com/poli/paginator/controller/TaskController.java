@@ -33,8 +33,8 @@ public class TaskController {
         return processRepository.GetByState(state);
     }
 
-    @PutMapping("/{id}")
-    public TaskModel update(@PathVariable("id") String state, @RequestBody ProcessModel obj) {
+    @PutMapping()
+    public TaskModel update(@RequestBody ProcessModel obj) {
         return processRepository.update(obj);
     }
 
